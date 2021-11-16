@@ -12,6 +12,10 @@
     clear: both;
 }
 
+section{
+    position: relative;
+}
+
 .testo{
     display: inline-block;
     font-size: 50px;
@@ -23,6 +27,8 @@
     left: 50%;
     transform: translate(-50%, 25%);
 }
+
+
 
 html{
   /*  overflow-y: hidden;*/
@@ -41,7 +47,7 @@ html{
 }
 
 img{
-    filter: drop-shadow(16px 20px 10px black);
+    filter: drop-shadow(16px 20px 15px black);
     max-width: 100%;
     height: auto;
     position: absolute;
@@ -65,3 +71,15 @@ img{
     background-color: rgb(13, 51, 46);
 }
 
+/*link cambio pagina*/
+
+nav{
+    position: fixed;
+    z-index: 2;
+    top:0;
+    left: 50%;
+}
+
+ul li{
+    display: inline-block;
+}

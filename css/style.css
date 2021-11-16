@@ -12,8 +12,38 @@
     clear: both;
 }
 
+html{
+    overflow-y: hidden;
+ }
+
+ 
 section{
     position: relative;
+}
+
+
+
+/*modifiche interne sezioni*/
+.container{
+    width: 100%;
+    height: 100vh;
+}
+
+.shoes{
+    width: 40%;
+    height: 100vh;
+    margin: 0 auto;
+    position: relative;
+}
+
+img{
+    filter: drop-shadow(16px 20px 15px black);
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    top: 25%;
+    right: 25%;
+    transform: translate(25%, -25%)
 }
 
 .testo{
@@ -26,35 +56,6 @@ section{
     bottom: 25%;
     left: 50%;
     transform: translate(-50%, 25%);
-}
-
-
-
-html{
-  /*  overflow-y: hidden;*/
-}
-
-.shoes{
-    width: 40%;
-    height: 100vh;
-    margin: 0 auto;
-    position: relative;
-}
-
-.container{
-    width: 100%;
-    height: 100vh;
-}
-
-img{
-    filter: drop-shadow(16px 20px 15px black);
-    max-width: 100%;
-    height: auto;
-    position: absolute;
-    top: 25%;
-    right: 25%;
-    transform: translate(25%, -25%)
-
 }
 
 /*sfondi container*/
@@ -73,13 +74,27 @@ img{
 
 /*link cambio pagina*/
 
-nav{
+.main-nav{
     position: fixed;
     z-index: 2;
     top:0;
     left: 50%;
+    transform: translateX(-50%);
+    margin-top: 10px;
 }
 
 ul li{
+    display: inline-block;  
+}
+
+a{
     display: inline-block;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: rgb(251, 251, 251);
+    border-radius: 50%;
+    filter: drop-shadow(5px 5px 5px black);
 }
